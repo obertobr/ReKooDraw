@@ -1,6 +1,6 @@
 import requests, random
 
-koo_post = input("Cole o link do post: ").replace("/","")[-36:]
+koo_post = input("Paste the post link: ").replace("/","")[-36:]
 
 api_url = f'https://www.kooapp.com/apiV1/ku/{koo_post}/rekoo_users?limit=1&offset=0'
 response = requests.get(api_url).json()
